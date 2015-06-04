@@ -145,18 +145,6 @@
 
         <constructor-arg>
             <list>
-                <bean class="org.opensaml.saml2.metadata.provider.HTTPMetadataProvider">
-                      <!-- URL containing the metadata -->
-                      <constructor-arg>
-                        <!-- This URL should look something like this: https://example.okta.com/app/abc0defghijK1lmN23o4/sso/saml/metadata -->
-                        <value type="java.lang.String">https://nshobayo.oktapreview.com/app/exk45jq9gtyo98cLc0h7/sso/saml/metadata</value>
-                      </constructor-arg>
-                      <!-- Timeout for metadata loading in ms -->
-                      <constructor-arg>
-                        <value type="int">5000</value>
-                      </constructor-arg>
-                      <property name="parserPool" ref="parserPool"/>
-                </bean>
                 <!-- Example of file system metadata without Extended Metadata -->
                 <!--
                 <bean class="org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider">
