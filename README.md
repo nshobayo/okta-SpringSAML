@@ -22,7 +22,7 @@ This section covers what you need to do to install and configure Tomcat from scr
 
 How to install the Spring Security SAML sample Okta application on Mac OS X:
 
-1. **Complete Step one in the "Installing the Spring Security SAML sample application "** at  
+1. **Complete Step one in the "Installing the Spring Security SAML sample application" Section** at  
 	:http://developer.okta.com/docs/guides/spring_security_saml.html#installing-the-spring-security-SAML-sample-application
 
 
@@ -39,7 +39,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	
 	- Use the command below to copy the sample Okta application into the Extension's "sample" folder
 	- Where oktaAppTarget is the location of the Okta app downloaded in step 2 and extensionTarget is the location of Spring SAML Extension folder  
-
+	
 	```shell	
 	cp oktaAppTarget/src extentionTarget/sample
 	```
@@ -49,6 +49,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	- Make sure your working directory is the "sample" subdirectory of the "spring-security-SAML" directory 
 	
 	- To compile 
+
 	```shell
 	../gradlew build install
 	``` 
@@ -73,7 +74,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	```
 	
 7. **Starting Application**
-	Load the Spring SAML application by opening the URL: http://localhost:8080/spring-security-SAML2-sample
+	- Load the Spring SAML application by opening the URL: http://localhost:8080/spring-security-SAML2-sample
 	Here's what it should look like:
 
 	![img](./docs/sample.png "A screenshot of working app running")
