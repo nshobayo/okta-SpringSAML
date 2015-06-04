@@ -1,4 +1,4 @@
-# introduction 
+# Introduction 
 
 This is an example of a SAML SP login Application using the Spring Security SAML framework 
 
@@ -12,7 +12,7 @@ Please make sure the following are installed before starting installation:
 [Java 1.6+ SDK](http://www.oracle.com/technetwork/java/javase/overview/index.html)
 
 [Apache Maven](https://maven.apache.org/download.cgi)
-# Instalation Setup
+# Installation Setup
 
 This section covers what you need to do to install and configure Tomcat from scratch on Mac OS X. If you already have Tomcat on your system, you can skip to Step 2 below.
 
@@ -23,16 +23,16 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 
 2. ##Downloading the Spring SAML Extension
 	
-	- Download the extention from  https://github.com/spring-projects/spring-security-saml
+	- Download the extension from  https://github.com/spring-projects/spring-security-saml
 
-	- Use 'git clone' to clone the repositiory locally
+	- Use 'git clone' to clone the repository locally
 	
 3. Downloading sample application 
 	
-	- Use 'git clone' to clone the repositiory locally
+	- Use 'git clone' to clone the repository locally
 	
-	- Use the command below to copy the sample Okta application into the Extention's "sample" folder
-		Where oktaAppTarget is the location of the Okta app downloaded in step 2 and extentionTarget is the location of Spring SAML Extention folder  
+	- Use the command below to copy the sample Okta application into the Extension's "sample" folder
+		Where oktaAppTarget is the location of the Okta app downloaded in step 2 and extensionTarget is the location of Spring SAML Extension folder  
 	```shell	
 	$ cp oktaAppTarget/src extentionTarget/sample
 	```
@@ -66,10 +66,10 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 
 # Configuring Okta to work with Spring Security SAML
 
-1.	Follow the directions under the "Configuring Okta to work with Spring Secuity SAML" at
+1.	Follow the directions under the "Configuring Okta to work with Spring Security SAML" at
 	: http://developer.okta.com/docs/guides/spring_security_saml.html#configuring-okta-to-work-with-spring-security-SAML
 
-	- ** STEP 7.a ** Attributes to be sent in the SAML assertion can be added under "Attrubute Statements" during this step if desired. 
+	- ** STEP 7.a ** Attributes to be sent in the SAML assertion can be added under "Attribute Statements" during this step if desired. 
 
 
 # Configuring Spring Security SAML to work with Okta
