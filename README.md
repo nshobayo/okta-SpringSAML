@@ -18,18 +18,18 @@ This section covers what you need to do to install and configure Tomcat from scr
 
 How to install the Spring Security SAML sample Okta application on Mac OS X:
 
-**1. Complete Step one in the "Installing the Spring Security SAML sample application "** at  
+1. **Complete Step one in the "Installing the Spring Security SAML sample application "** at  
 	:http://developer.okta.com/docs/guides/spring_security_saml.html#installing-the-spring-security-SAML-sample-application
 
 
-**2. Downloading the Spring SAML Extension**
+2. **Downloading the Spring SAML Extension**
 	
 	- Download the extension from  https://github.com/spring-projects/spring-security-saml
 
 	- Use 'git clone' to clone the repository locally
 	
 
-**3. Downloading sample application**
+3. **Downloading sample application**
 	
 	- Use 'git clone' to clone the repository locally
 	
@@ -40,7 +40,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	$ cp oktaAppTarget/src extentionTarget/sample
 	```
 	
-**4. Compilation**
+4. **Compilation**
 	
 	- Make sure your working directory is the "sample" subdirectory of the "spring-security-SAML" directory 
 	
@@ -49,7 +49,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	- Your compiled war archive file, spring-security-SAML2-sample.war, can be found in directory sample/build/libs/
 
 
-**5. Deployment**
+5. **Deployment**
 	
 	- Use the command below to copy the compiled spring-security-SAML2-sample.war file to the Tomcat directory you set up in step one
 	
@@ -57,7 +57,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	cp target/spring-security-SAML2-sample.war /Library/Tomcat/webapps/
 	```
 
-**6. Starting Tomcat**
+6. **Starting Tomcat**
 	
 	- Use the command below to start Tomcat
 	- 
@@ -65,7 +65,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	/Library/Tomcat/bin/startup.sh
 	```
 	
-**7. Starting Application**
+7. **Starting Application**
 	Load the Spring SAML application by opening the URL: http://localhost:8080/spring-security-SAML2-sample
 	Here's what it should look like:
 
