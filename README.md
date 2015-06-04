@@ -1,8 +1,12 @@
 # Introduction 
 
-This is an example of a SAML SP login Application using the Spring Security SAML framework 
+This guide describes how to use Spring Security SAML to add support for Okta (via SAML) to Java applications that use the Spring framework.
 
-The setup for this app refers to the Spring Security SAML (Java) tutorial at : http://developer.okta.com/docs/guides/spring_security_saml.html
+In this guide, you will learn how to install and configure an Okta SAML application 
+
+This guide assumes that you are familiar with the basics of Java software development: editing text files, using the command line, and running Tomcat, Maven or Gradle.
+
+If you’re already familiar with Okta and Spring, you can skip to the section titled “Configuring Spring Security SAML to work with Okta”.
 
 
 # Requirement 
@@ -34,17 +38,20 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	- Use 'git clone' to clone the repository locally
 	
 	- Use the command below to copy the sample Okta application into the Extension's "sample" folder
-		Where oktaAppTarget is the location of the Okta app downloaded in step 2 and extensionTarget is the location of Spring SAML Extension folder  
+	- Where oktaAppTarget is the location of the Okta app downloaded in step 2 and extensionTarget is the location of Spring SAML Extension folder  
 
 	```shell	
-	$ cp oktaAppTarget/src extentionTarget/sample
+	cp oktaAppTarget/src extentionTarget/sample
 	```
 	
 4. **Compilation**
 	
 	- Make sure your working directory is the "sample" subdirectory of the "spring-security-SAML" directory 
 	
-	- To compile {../gradlew build install } in the sample subdirectory
+	- To compile 
+	```shell
+	../gradlew build install
+	``` 
 
 	- Your compiled war archive file, spring-security-SAML2-sample.war, can be found in directory sample/build/libs/
 
@@ -88,4 +95,6 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	- The securityContext.xml file can be found at /webapp/securityContext.xml
  
 #Testing 
+
+
 
