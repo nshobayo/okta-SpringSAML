@@ -60,7 +60,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 6. **Starting Tomcat**
 	
 	- Use the command below to start Tomcat
-	- 
+	
 	```shell	
 	/Library/Tomcat/bin/startup.sh
 	```
