@@ -33,8 +33,7 @@
             <p class="lead">Select the IdP you want to use to authenticate:</p>
             <%
                 //stores available IDPs  
-                WebApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(
-                    getServletConfig().getServletContext());
+                WebApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(getServletConfig().getServletContext());
                 MetadataManager mm = context.getBean("metadata", MetadataManager.class);
                 Set<String> idps = mm.getIDPEntityNames();
                 pageContext.setAttribute("idps", idps);
