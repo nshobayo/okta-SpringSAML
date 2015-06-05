@@ -72,6 +72,8 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	```shell
 	../gradlew build install
 	``` 
+	This task compiles, tests, and assembles the code into a WAR file.
+	
 	A succesful build should look something like this 
 	![img](./docs/build.png "A succesful build")
 
