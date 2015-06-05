@@ -14,8 +14,17 @@ If you’re already familiar with Okta and Spring, you can skip to the section t
 Please make sure the following are installed before starting installation:
 
 [Java 1.6+ SDK](http://www.oracle.com/technetwork/java/javase/overview/index.html)
+	- Check using the command below 
+	
+	java -version
+
 
 [Apache Maven](https://maven.apache.org/download.cgi)
+	- Check using the command  below
+	
+	mvn --version
+
+
 # Installation Setup
 
 This section covers what you need to do to install and configure Tomcat from scratch on Mac OS X. If you already have Tomcat on your system, you can skip to Step 2 below.
@@ -32,13 +41,20 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 
 	- Use 'git clone' to clone the repository locally
 	
+	```script 
+	git clone https://github.com/spring-projects/spring-security-saml.git
+	```
+
 
 3. **Downloading sample application**
 	
 	- Use 'git clone' to clone the repository locally
 	
-	- Use the command below to copy the sample Okta application into the Extension's "sample" folder
-	- Where oktaAppTarget is the location of the Okta app downloaded in step 2 and extensionTarget is the location of Spring SAML Extension folder  
+	```script 
+	git clone https://github.com/nshobayo/okta-SpringSAML.git
+	```
+
+	- Use the command below to copy the sample Okta application into the Extension's "src" folder
 	
 	```shell
 	rm -rf spring-security-saml/sample/src/main
@@ -49,18 +65,25 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	
 	- Make sure your working directory is the "sample" subdirectory of the "spring-security-SAML" directory 
 	
-	- To compile 
+	```script 
+	cd spring-security-saml/sample
+	```
 
+	- To compile 
+	
 	```shell
 	../gradlew build install
 	``` 
+	A succesful build should look something like this 
+	![img](./docs/build.png "A succesful build")
 
-	- Your compiled war archive file, spring-security-SAML2-sample.war, can be found in directory sample/build/libs/
+
+	- Your compiled war archive file, `spring-security-SAML2-sample.war`, can be found in directory `build/libs/`
 
 
 5. **Deployment**
 	
-	- Use the command below to copy the compiled spring-security-SAML2-sample.war file to the Tomcat directory you set up in step one
+	- Assuming your current directory is `spring-security-saml.sample` Use the command below to copy the compiled `spring-security-SAML2-sample.war` file to the Tomcat directory you set up in step one
 	
 	```shell
 	cp build/libs/spring-security-SAML2-sample.war /Library/Tomcat/webapps/
@@ -78,6 +101,8 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	
 7. **Starting Application**
 	- Load the Spring SAML application by opening the URL: [Sample App](http://localhost:8080/spring-security-saml2-sample/saml/discovery?entityID=http%3A%2F%2Flocalhost%3A8080%2Fspring-security-saml2-sample%2Fsaml%2Fmetadata&returnIDParam=idp)
+	- **Note** Links on app will not be functional as of yet because we have not yet configured any IDPs.
+	
 	Here's what it should look like:
 
 	![img](./docs/sample.png "A screenshot of working app running")
@@ -96,7 +121,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 1.	 Follow the directions under the "Configuring Spring Security SAML to work with Okta" at
 	: http://developer.okta.com/docs/guides/spring_security_saml.html#configuring-spring-security-SAML-to-work-with-okta 
 
-	- The securityContext.xml file can be found at /webapp/securityContext.xml
+	- The `securityContext.xml` file can be found at `/Library/Tomcat/webapp/securityContext.xml`
 
 
 #Testing 
