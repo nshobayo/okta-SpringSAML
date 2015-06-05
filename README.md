@@ -45,7 +45,15 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	cp oktaAppTarget/src extentionTarget/sample
 	```
 	
-4. **Compilation**
+4. **Configuring Spring Security SAML to work with Okta**
+
+        - Follow the directions under the "Configuring Spring Security SAML to work with Okta" at
+	: http://developer.okta.com/docs/guides/spring_security_saml.html#configuring-spring-security-SAML-to-work-with-okta 
+
+	- The securityContext.xml file can be found at /webapp/securityContext.xml
+
+
+5. **Compilation**
 	
 	- Make sure your working directory is the "sample" subdirectory of the "spring-security-SAML" directory 
 	
@@ -58,7 +66,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	- Your compiled war archive file, spring-security-SAML2-sample.war, can be found in directory sample/build/libs/
 
 
-5. **Deployment**
+6. **Deployment**
 	
 	- Use the command below to copy the compiled spring-security-SAML2-sample.war file to the Tomcat directory you set up in step one
 	
@@ -66,15 +74,17 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	cp target/spring-security-SAML2-sample.war /Library/Tomcat/webapps/
 	```
 
-6. **Starting Tomcat**
+
+7. **Starting Tomcat**
 	
 	- Use the command below to start Tomcat
 	
 	```shell	
 	/Library/Tomcat/bin/startup.sh
 	```
+
 	
-7. **Starting Application**
+8. **Starting Application**
 	- Load the Spring SAML application by opening the URL: http://localhost:8080/spring-security-SAML2-sample
 	Here's what it should look like:
 
@@ -89,12 +99,6 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	- ** STEP 7.a ** Attributes to be sent in the SAML assertion can be added under "Attribute Statements" during this step if desired. 
 
 
-# Configuring Spring Security SAML to work with Okta
-
-1. Follow the directions under the "Configuring Spring Security SAML to work with Okta" at
-	: http://developer.okta.com/docs/guides/spring_security_saml.html#configuring-spring-security-SAML-to-work-with-okta 
-
-	- The securityContext.xml file can be found at /webapp/securityContext.xml
  
 #Testing 
 
