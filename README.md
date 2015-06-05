@@ -113,7 +113,10 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 1.	Follow the directions under the "Configuring Okta to work with Spring Security SAML" at
 	: http://developer.okta.com/docs/guides/spring_security_saml.html#configuring-okta-to-work-with-spring-security-SAML
 
-	- ** STEP 7.a ** Attributes to be sent in the SAML assertion can be added under "Attribute Statements" during this step if desired. 
+	- ** STEP 7.a ** Attributes to be sent in each SAML assertion can be added under "Attribute Statements" during this step if desired. Theses attribute values can be derived and used from the SP side.
+
+	Example of the attributes First Name, Last Name and Email being added: 
+	![img](./docs/atAdd.png "A screenshot of working app running")
 
 
 # Configuring Spring Security SAML to work with Okta
