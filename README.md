@@ -61,7 +61,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 
 4. **Compilation**
 	
-	- Make sure your working directory is the "sample" subdirectory of the "spring-security-SAML" directory 
+	- Make sure your working directory is the `sample` subdirectory of the `spring-security-saml` directory 
 	
 	```script 
 	cd spring-security-saml/sample
