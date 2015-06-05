@@ -46,10 +46,10 @@
                         pageContext.setAttribute("attributes",attributes);
                     %>
                     <%-- Displays Attribute Name and Corresponding Attribute iteratively --%>
-                    <c:forEach items= "${attributes}" var="attr">
+                    <c:forEach items= "${attributes}" var="attribute">
                         <tr>
-                            <td value="${attr.getName()}">${attr.getName()}</td>
-                            <td value ="${credential.getAttributeAsString(attr.getName())}">${credential.getAttributeAsString(attr.getName())}</td>
+                            <td value="${attribute.getName()}">${attribute.getName()}</td>
+                            <td value ="${credential.getAttributeAsString(attribute.getName())}">${credential.getAttributeAsString(attribute.getName())}</td>
                         </tr>
                     </c:forEach>   
                 </table>  
