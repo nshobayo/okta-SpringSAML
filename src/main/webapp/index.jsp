@@ -37,7 +37,9 @@
             <div class="col-md-8">
                 <%-- Attribute Pair Table --%>            
                 <table class="table">
-                    <%  //Stores Attributes Parsed Form Saml Assertion
+                    <%--Stores Attributes Parsed Form Saml Assertion --%>
+
+                    <%  
                         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
                         SAMLCredential credential = (SAMLCredential) authentication.getCredentials();
                         List<Attribute>  attributes = credential.getAttributes(); 
