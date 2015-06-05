@@ -47,7 +47,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	
 4. **Configuring Spring Security SAML to work with Okta**
 
-        - Follow the directions under the "Configuring Spring Security SAML to work with Okta" at
+	- Follow the directions under the "Configuring Spring Security SAML to work with Okta" at
 	: http://developer.okta.com/docs/guides/spring_security_saml.html#configuring-spring-security-SAML-to-work-with-okta 
 
 	- The securityContext.xml file can be found at /webapp/securityContext.xml
