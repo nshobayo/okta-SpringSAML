@@ -41,19 +41,11 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	- Where oktaAppTarget is the location of the Okta app downloaded in step 2 and extensionTarget is the location of Spring SAML Extension folder  
 	
 	```shell
-	rm -rf extentionTarget/sample/src/main
-	cp oktaAppTarget/src extentionTarget/sample
+	rm -rf spring-security-saml/sample/src/main
+	cp -r okta-SpringSAML/src spring-security-saml/sample/src
 	```
-	
-4. **Configuring Spring Security SAML to work with Okta**
 
-	- Follow the directions under the "Configuring Spring Security SAML to work with Okta" at
-	: http://developer.okta.com/docs/guides/spring_security_saml.html#configuring-spring-security-SAML-to-work-with-okta 
-
-	- The securityContext.xml file can be found at /webapp/securityContext.xml
-
-
-5. **Compilation**
+4. **Compilation**
 	
 	- Make sure your working directory is the "sample" subdirectory of the "spring-security-SAML" directory 
 	
@@ -66,16 +58,16 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	- Your compiled war archive file, spring-security-SAML2-sample.war, can be found in directory sample/build/libs/
 
 
-6. **Deployment**
+5. **Deployment**
 	
 	- Use the command below to copy the compiled spring-security-SAML2-sample.war file to the Tomcat directory you set up in step one
 	
 	```shell
-	cp target/spring-security-SAML2-sample.war /Library/Tomcat/webapps/
+	cp build/libs/spring-security-SAML2-sample.war /Library/Tomcat/webapps/
 	```
 
 
-7. **Starting Tomcat**
+6. **Starting Tomcat**
 	
 	- Use the command below to start Tomcat
 	
@@ -84,8 +76,8 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	```
 
 	
-8. **Starting Application**
-	- Load the Spring SAML application by opening the URL: http://localhost:8080/spring-security-SAML2-sample
+7. **Starting Application**
+	- Load the Spring SAML application by opening the URL: [Sample App](http://localhost:8080/spring-security-saml2-sample/saml/discovery?entityID=http%3A%2F%2Flocalhost%3A8080%2Fspring-security-saml2-sample%2Fsaml%2Fmetadata&returnIDParam=idp)
 	Here's what it should look like:
 
 	![img](./docs/sample.png "A screenshot of working app running")
@@ -99,7 +91,14 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	- ** STEP 7.a ** Attributes to be sent in the SAML assertion can be added under "Attribute Statements" during this step if desired. 
 
 
- 
+# Configuring Spring Security SAML to work with Okta
+
+1.	 Follow the directions under the "Configuring Spring Security SAML to work with Okta" at
+	: http://developer.okta.com/docs/guides/spring_security_saml.html#configuring-spring-security-SAML-to-work-with-okta 
+
+	- The securityContext.xml file can be found at /webapp/securityContext.xml
+
+
 #Testing 
 
 
