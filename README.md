@@ -40,7 +40,8 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	- Use the command below to copy the sample Okta application into the Extension's "sample" folder
 	- Where oktaAppTarget is the location of the Okta app downloaded in step 2 and extensionTarget is the location of Spring SAML Extension folder  
 	
-	```shell	
+	```shell
+	rm -rf extentionTarget/sample/src/main
 	cp oktaAppTarget/src extentionTarget/sample
 	```
 	
