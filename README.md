@@ -56,7 +56,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	
 	```shell
 	rm -rf spring-security-saml/sample/src/main
-	cp -r okta-SpringSAML/src spring-security-saml/sample/src
+	cp -r okta-SpringSAML/src/main spring-security-saml/sample/src
 	```
 
 4. **Compilation**
