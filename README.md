@@ -134,6 +134,7 @@ There are two ways to test a SAML application: Starting from the Spring applicat
 
 ![img](./docs/assert.png "A screenshot of working app running")
 
+
 1. **Login from the Spring Security SAML sample application (this is know as an "SP initiated" login)**
  
  	- Open the sample application in your browser: http://localhost:8080/spring-security-saml2-sample
