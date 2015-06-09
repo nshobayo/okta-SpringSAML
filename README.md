@@ -155,9 +155,9 @@ If you’re able to get to the “Authenticated User” page using both of the m
 Congratulations on getting Okta working with Spring.
 
 
-#Next Step
+#Next Steps
 
-At this point you should be familiar with setting up SAML enabled application to work with an Okta organization and how to configure Spring Security SAMl to work with Okta.
+At this point you should be familiar with setting up SAML enabled application to work with an Okta organization and how to configure Spring Security SAML to work with Okta.
 
 After you have Okta working with the example Spring Security SAML application, the next step is to take the example code and move it to your production application. The specifics of how this works is different depending on how your application is set up. Pay special attention to the securityContext.xml which allows you to add more IDPs to the app as well as control page redirects. Before any changes are made to the securityContext.xml file, you should consider reading the [Spring Security SAML reference documents](http://docs.spring.io/spring-security-saml/docs/1.0.x/reference/html/) which provides a detailed overview of all the components and features of Spring Security SAML.
 
