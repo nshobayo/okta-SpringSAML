@@ -37,7 +37,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 
 2. **Downloading the Spring SAML Extension**
 
-	- Use 'git clone' to clone the extention locally the repository locally
+	- Use 'git clone' to clone the extention locally
 
 	```script 
 	git clone https://github.com/spring-projects/spring-security-saml.git
