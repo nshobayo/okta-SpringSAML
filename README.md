@@ -108,7 +108,7 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	![img](./docs/sample.png "A screenshot of working app running")
 
 
-# Configuring Okta to work with Spring Security SAML
+# Configuring Okta to work with Spring Security SAML#
 
 1.	Follow the directions under the "Configuring Okta to work with Spring Security SAML" at
 	: http://developer.okta.com/docs/guides/spring_security_saml.html#configuring-okta-to-work-with-spring-security-SAML
@@ -120,13 +120,13 @@ How to install the Spring Security SAML sample Okta application on Mac OS X:
 	![img](./docs/atAdd.png "A screenshot of working app running")
 
 
-# Configuring Spring Security SAML to work with Okta
+# Configuring Spring Security SAML to work with Okta#
 
 1.	 Follow the directions under the "Configuring Spring Security SAML to work with Okta" at
 	: http://developer.okta.com/docs/guides/spring_security_saml.html#configuring-spring-security-SAML-to-work-with-okta 
 
 
-#Testing
+#Testing#
 
 Now that you’ve set up an application in Okta and configured the Spring Security SAML example application to use that application, you’re ready to test it out.
 
@@ -134,13 +134,11 @@ There are two ways to test a SAML application: Starting from the Spring applicat
 
 ![img](./docs/assert.png "A screenshot of working app running")
 
-<br/>
-<br/>
-1. **Login from the Spring Security SAML sample application (This is known as an “SP initiated” login)**
-
- - Open the sample application in your browser: http://localhost:8080/spring-security-saml2-sample
- - Select Okta 
- - Click the “Start single sign-on” button.
+1. **Login from the Spring Security SAML sample application (this is know as an "SP initiated" login)**
+ 
+ 	- Open the sample application in your browser: http://localhost:8080/spring-security-saml2-sample
+ 	- Select Okta 
+ 	- Click the “Start single sign-on” button.
 ![img](./docs/preAssert.png "A screenshot of working app running")
 
 2. **Login from Okta (This is known as an “IdP initiated” login)**
